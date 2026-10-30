@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --sb-track-color: #232E33;
+    --sb-thumb-color: #6BAF8D;
+    --sb-size: 14px;
+}

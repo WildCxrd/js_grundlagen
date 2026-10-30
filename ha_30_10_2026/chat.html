@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./styles/standard.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/scrollbar.css">
+    <link rel="stylesheet" href="./styles/fonts.css">
+
+    <script src="./chat.js"></script>
+</head>
+
+<body>
+    <main>
+        <div id="input_panel">
+            <label for="name_input">Name:</label>
+            <input id="name_input" type="text">
+
+            <label for="message_input">Nachricht:</label>
+            <input id="message_input" type="text">
+
+            <button id="send_button" onclick="sendMessage()">Senden</button>
+            <div class="keep-inputs-checkbox-wrapper">
+                <input id="keep_inputs_checkbox" type="checkbox" value="Fassadsad">
+                <label for="keep_inputs_checkbox">Eingaben nach dem Senden behalten</label>
+            </div>
+
+            <button id="toggle_color_scheme_button" onclick="toggleColorScheme()">Dark/Whitemode</button>
+        </div>
+
+        <div class="input-error-message-wrapper">
+            <p id="input_error_message">Bitte Namen (min. 3 Buchstaben) und Nachricht (min. 5 Buchstaben) eingeben.</p>
+        </div>
+
+        <div id="messages_panel">
+        </div>
+    </main>
+
+</body>
+
+</html>

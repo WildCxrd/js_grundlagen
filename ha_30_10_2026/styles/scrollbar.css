@@ -1,0 +1,22 @@
+#messages_panel::-webkit-scrollbar {
+    width: var(--sb-size);
+}
+
+#messages_panel::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 3px;
+
+    margin: 14px;
+}
+
+#messages_panel::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 3px;
+
+}
+
+@supports not selector(::-webkit-scrollbar) {
+    #messages_panel {
+        scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+    }
+}
