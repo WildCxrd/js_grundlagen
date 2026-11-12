@@ -1,0 +1,25 @@
+#book_list {
+    background-color: rgb(245, 234, 234);
+
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.book_entry {
+    width: fit-content;
+
+    color: white;
+    background-color: rgb(77, 69, 69);
+
+    padding: 8px;
+
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}

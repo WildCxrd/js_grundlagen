@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="array_crud.js"></script>
+    <script src="templates.js"></script>
+</head>
+
+<body onload="render()">
+    <h2>Projektanforderung: Interaktive Bücherliste</h2>
+
+    <p>Es soll eine Bücherliste mit noch zu lesenden Büchern erstellt werden. Folgende Kernfunktionen sind umzusetzen:
+    </p>
+
+    <ul>
+        <li>Ein <strong>Input-Feld</strong>, welches ein Array befüllen kann.</li>
+        <li>Das Array soll auf der Seite <strong>gerendert</strong> (angezeigt) werden.</li>
+        <li>Man soll einzelne Einträge des Arrays <strong>löschen</strong> können.</li>
+    </ul>
+
+    <p><em>Hinweis: Gerne etwas designen, wenn das Projekt früher fertig ist oder als Zusatzaufgabe.</em></p>
+
+    <h3>Zusatzaufgaben:</h3>
+
+    <ul>
+        <li>
+            <strong>Zweites Array ("Gelesene Bücher"):</strong> Man kann gelesene Bücher (z. B. indem man auf den Namen
+            des Buches klickt) zu einem zweiten „Gelesen“-Array hinzufügen. Diese Liste soll ebenfalls angezeigt werden.
+        </li>
+        <li>
+            <strong>Local Storage:</strong> Das Ganze wird im Local Storage des Browsers gespeichert, damit die Daten
+            beim Neuladen erhalten bleiben.
+        </li>
+    </ul>
+    <hr>
+    <h1>CRUD Übung Bücherliste</h1>
+    <input type="text" id="new_books">
+    <button onclick="addToArray()">Buch Hinzufügen</button>
+    <div>- Bücher Liste:</div>
+    <div id="book_list"></div>
+    <div>- Extra Aufgabe -> Gelesene Bücher:</div>
+    <div id="read_books"></div>
+</body>
+
+</html>
