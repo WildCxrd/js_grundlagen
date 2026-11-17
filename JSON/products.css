@@ -1,0 +1,18 @@
+#productsSection{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#propertiesList{
+    margin: unset;
+}
+
+.productCard{
+    background-color: lightgray;
+
+    padding: 20px;
+
+    border: 2px solid black;
+    border-radius: 20px;
+}
